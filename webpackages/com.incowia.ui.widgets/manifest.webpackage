@@ -1,0 +1,75 @@
+{
+  "name": "widgets",
+  "groupId": "com.incowia.ui",
+  "version": "1.0-SNAPSHOT",
+  "modelVersion": "9.1.1",
+  "docType": "webpackage",
+  "author": {
+    "name": "Philipp Wagner",
+    "email": "philipp.wagner@incowia.com"
+  },
+  "license": "MIT",
+  "keywords": [],
+  "man": [],
+  "artifacts": {
+    "apps": [
+      {
+        "artifactId": "docs",
+        "description": "Generated webpackage documentation.",
+        "runnables": [
+          {
+            "name": "docs",
+            "path": "/index.html",
+            "description": "Show the interface of this component."
+          }
+        ]
+      }
+    ],
+    "elementaryComponents": [
+      {
+        "artifactId": "dropdown-menu",
+        "description": "Dropdown menu which is triggered by a button",
+        "runnables": [
+          {
+            "name": "demo",
+            "path": "/demo/index.html",
+            "description": "Demo app..."
+          },
+          {
+            "name": "docs",
+            "path": "/docs/index.html",
+            "description": "Show the interface of this component."
+          }
+        ],
+        "resources": [
+          "dropdown-menu.html"
+        ],
+        "dependencies": [
+          {
+            "webpackageId": "cubx.core.rte@2.1.0",
+            "artifactId": "cubxpolymer"
+          }
+        ],
+        "slots": [
+          {
+            "slotId": "dropBtnValue",
+            "type": "string",
+            "direction": [ "input" ]
+          },
+          {
+            "slotId": "items",
+            "type": "object",
+            "direction": [ "input" ]
+          },
+          {
+            "slotId": "align",
+            "type": "string",
+            "direction": [ "input" ]
+          }
+        ]
+      }
+    ],
+    "compoundComponents": [],
+    "utilities": []
+  }
+}

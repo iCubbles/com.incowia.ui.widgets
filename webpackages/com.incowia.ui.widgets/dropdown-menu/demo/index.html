@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>&lt;dropdown-menu&gt; demo</title>
+
+    <script src="../../../cubx.core.rte@2.1.0/webcomponents-lite/webcomponents-lite.js"></script>
+
+    <!--
+        Refer to the crc-loader artifact from a Cubbles-Base.
+        Take care: All other dependencies are expected to be available within the same Base!
+
+        Want to add a 'main' -script to be executed after the dependencies have been loaded?
+        If yes, add the following attribute: data-crc-main="js/my-script.js"
+    -->
+    <script src="../../../cubx.core.rte@2.1.0/crc-loader/js/main.js" data-crcinit-loadcif="true"></script>
+
+</head>
+<body>
+<!--  Place cubbles components there. -->
+<dropdown-menu cubx-webpackage-id="this">
+    <cubx-core-init style="display:none;">
+        <cubx-core-slot-init slot="dropBtnValue">"Drop Button"</cubx-core-slot-init>
+        <cubx-core-slot-init slot="items">
+            [{"name":"item1","displayName":"Item 1","target":"#item1"},
+            {"name":"item2","displayName":"Item 2","target":"#item2"},
+            {"name":"item3","displayName":"Item 3","target":"#item3"}]
+        </cubx-core-slot-init>
+        <cubx-core-slot-init slot="align">"right"</cubx-core-slot-init>
+    </cubx-core-init>
+</dropdown-menu>
+
+</body>
+</html>

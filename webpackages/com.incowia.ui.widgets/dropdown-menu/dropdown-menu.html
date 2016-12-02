@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="dropdown-menu-style.css">
+<dom-module id="dropdown-menu">
+    <template>
+        <div class$="dropdown {{getAlignment(model.align)}}">
+            <button class="dropbtn" on-click="toggleDropdown">{{model.dropBtnValue}}</button>
+            <div id="dropdown-content" class="dropdown-content" hidden$="{{hideDropDown}}">
+                <template is="dom-repeat" items="{{model.items}}">
+                    <a href="{{item.target}}" id="{{item.name}}">{{item.displayName}}</a>
+                </template>
+            </div>
+        </div>
+    </template>
+    <script src="dropdown-menu.js"></script>
+</dom-module>

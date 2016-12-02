@@ -1,0 +1,14 @@
+{
+  "uploadConfigs": {
+    "dev": {
+      "url": "http://cubbles-base-local/sandbox"
+    },
+    "devDryRun": {
+      "url": "http://cubbles-base-local/sandbox",
+      "dryRun": true
+    },
+    "release": {
+      "url": "https://cubbles.world/sandbox"
+    }
+  }
+}
