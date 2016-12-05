@@ -95,4 +95,14 @@ module.exports = function (grunt) {
   var configs = require('load-grunt-configs')(grunt, options);
   grunt.initConfig(configs);
   // console.log(grunt.config.get('param.src'));
+
+  // register listener to set *.scss files which need to be sass compiled dynamically
+  grunt.event.on('watch', function (action, filepath, target) {
+    // grunt.log.writeln(target + ': ' + filepath + ' has ' + action);
+    var files = {};
+    var dest = filepath.substring(0, filepath.lastIndexOf('.scss')) + '.css';
+    files[dest] = filepath;
+    grunt.log.writeln('Converting "' + filepath + '" to "' + dest + '"');
+    grunt.config('sass.dist.files', files);
+  });
 };
