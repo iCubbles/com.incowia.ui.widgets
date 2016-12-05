@@ -11,7 +11,7 @@ dropdown-menu .dropdown {
   dropdown-menu .dropdown.align-right {
     float: right; }
     dropdown-menu .dropdown.align-right .dropdown-content {
-      right: 0; }
+      right: 10; }
 
 dropdown-menu .dropdown-content {
   position: absolute;

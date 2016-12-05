@@ -54,19 +54,51 @@
           {
             "slotId": "dropBtnValue",
             "type": "string",
-            "direction": [ "input" ]
+            "direction": [
+              "input"
+            ]
           },
           {
             "slotId": "items",
             "type": "object",
-            "direction": [ "input" ]
+            "direction": [
+              "input"
+            ]
           },
           {
             "slotId": "align",
             "type": "string",
-            "direction": [ "input" ]
+            "direction": [
+              "input"
+            ]
           }
         ]
+      },
+      {
+        "artifactId": "side-nav",
+        "description": "Create a full height side-nav. ",
+        "runnables": [
+          {
+            "name": "demo",
+            "path": "/demo/index.html",
+            "description": "Demo app..."
+          },
+          {
+            "name": "docs",
+            "path": "/docs/index.html",
+            "description": "Show the interface of this component."
+          }
+        ],
+        "resources": [
+          "side-nav.html"
+        ],
+        "dependencies": [
+          {
+            "webpackageId": "cubx.core.rte@2.1.0",
+            "artifactId": "cubxpolymer"
+          }
+        ],
+        "slots": []
       }
     ],
     "compoundComponents": [],
