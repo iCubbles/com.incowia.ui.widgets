@@ -9,6 +9,9 @@
     },
     "release": {
       "url": "https://cubbles.world/sandbox"
+    },
+    "pcp-release": {
+      "url": "https://cubbles.world/pcp-sandbox"
     }
   }
 }
