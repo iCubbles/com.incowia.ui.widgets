@@ -1,0 +1,52 @@
+side-nav .sidenav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  background-color: #e6e6e6;
+  overflow-x: hidden;
+  padding-top: 40px;
+  transition: 0.5s; }
+  side-nav .sidenav.left {
+    left: 0; }
+  side-nav .sidenav.right {
+    right: 0; }
+  side-nav .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+    white-space: nowrap; }
+    side-nav .sidenav a:hover {
+      color: #ffffff;
+      background-color: #000000; }
+  side-nav .sidenav.hidden {
+    width: 0; }
+  side-nav .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px; }
+    side-nav .sidenav .closebtn:hover {
+      background-color: transparent; }
+  side-nav .sidenav .title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 25px;
+    padding: 8px 8px 8px 32px; }
+
+side-nav .modal-overlay {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: #000000;
+  opacity: 0.4; }
+  side-nav .modal-overlay.hidden {
+    display: none; }

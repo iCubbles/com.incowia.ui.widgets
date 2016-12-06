@@ -1,0 +1,81 @@
+$sideNavWidth: 250px;
+$sideNavBackgroundColor: #e6e6e6;
+$sideNavTextColor: #000000;
+$sideNavLinkActiveColor: #ffffff;
+$sideNavLinkActiveBackgroundColor: #000000;
+$sideNavModelOverlayBackground: #000000;
+$sideNavModelOverlayOpacity: 0.4;
+
+side-nav {
+  .sidenav {
+    height: 100%;
+    width: $sideNavWidth;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    background-color: $sideNavBackgroundColor;
+    overflow-x: hidden;
+    padding-top: 40px;
+    transition: 0.5s;
+
+    &.left {
+      left: 0;
+    }
+
+    &.right {
+      right: 0;
+    }
+
+    a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 20px;
+      color: $sideNavTextColor;
+      display: block;
+      transition: 0.3s;
+      white-space: nowrap;
+
+      &:hover {
+        color: $sideNavLinkActiveColor;
+        background-color: $sideNavLinkActiveBackgroundColor;
+      }
+    }
+
+    &.hidden {
+      width: 0;
+    }
+
+    .closebtn {
+      position: absolute;
+      top: 0;
+      right: 0;
+      font-size: 30px;
+
+      &:hover {
+        background-color: transparent;
+      }
+    }
+
+    .title {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 25px;
+      padding: 8px 8px 8px 32px;
+    }
+  }
+  .modal-overlay {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: $sideNavModelOverlayBackground;
+    opacity: $sideNavModelOverlayOpacity;
+
+    &.hidden {
+      display: none;
+    }
+  }
+}

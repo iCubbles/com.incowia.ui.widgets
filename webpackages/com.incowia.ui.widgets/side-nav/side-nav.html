@@ -1,9 +1,16 @@
 <link rel="stylesheet" href="side-nav-style.css">
 <dom-module id="side-nav">
-
     <template>
-       <p>Side nav goes here...</p>
+        <div id="sidenav" class$="sidenav {{visibilityClass}} {{model.anchor}}">
+            <div class="title">{{model.title}}</div>
+            <a href="javascript:void(0)" class="closebtn" on-click="closeNav">&times;</a>
+            <template is="dom-repeat" items="{{model.items}}">
+                <a href="{{item.target}}">{{item.displayName}}</a>
+            </template>
+        </div>
+        <template is="dom-if" if="{{model.modal}}">
+            <div id="modal" class$="modal-overlay {{visibilityClass}}"></div>
+        </template>
     </template>
-
     <script src="side-nav.js"></script>
 </dom-module>

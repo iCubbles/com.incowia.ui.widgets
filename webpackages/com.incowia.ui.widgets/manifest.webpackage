@@ -98,7 +98,38 @@
             "artifactId": "cubxpolymer"
           }
         ],
-        "slots": []
+        "slots": [
+          {
+            "slotId": "items",
+            "type": "object",
+            "direction": [
+              "input"
+            ]
+          },
+          {
+            "slotId": "title",
+            "type": "string",
+            "direction": [
+              "input"
+            ]
+          },
+          {
+            "slotId": "anchor",
+            "type": "string",
+            "direction": [
+              "input"
+            ],
+            "value": "left"
+          },
+          {
+            "slotId": "modal",
+            "type": "boolean",
+            "direction": [
+              "input"
+            ],
+            "value": false
+          }
+        ]
       }
     ],
     "compoundComponents": [],

@@ -18,8 +18,26 @@
 
 </head>
 <body>
+<!-- Helper for open side navigation -->
+<div style="text-align: center;"><button onclick="openNav()">Open Sidenav</button></div>
+<script>
+    function openNav() {
+        document.getElementsByTagName('side-nav')[0].openNav();
+    };
+</script>
+
 <!--  Place cubbles components there. -->
-<side-nav cubx-webpackage-id="this"></side-nav>
+<side-nav cubx-webpackage-id="this">
+    <cubx-core-init style="display:none;">
+        <cubx-core-slot-init slot="items">
+            [{"name":"item1","displayName":"Item 1","target":"#item1"},
+            {"name":"item2","displayName":"Item 2","target":"#item2"},
+            {"name":"item3","displayName":"Item 3","target":"#item3"}]
+        </cubx-core-slot-init>
+        <cubx-core-slot-init slot="title">"Title"</cubx-core-slot-init>
+        <cubx-core-slot-init slot="modal">true</cubx-core-slot-init>
+    </cubx-core-init>
+</side-nav>
 
 </body>
 </html>
