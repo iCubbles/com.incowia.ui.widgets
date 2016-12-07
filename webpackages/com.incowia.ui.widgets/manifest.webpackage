@@ -56,21 +56,24 @@
             "type": "string",
             "direction": [
               "input"
-            ]
+            ],
+            "description": "The given value (if any) will be set as drop buttons text."
           },
           {
             "slotId": "items",
             "type": "object",
             "direction": [
               "input"
-            ]
+            ],
+            "description": "Set the items which should be displayed. Expects an array of objects. See README for details."
           },
           {
             "slotId": "align",
             "type": "string",
             "direction": [
               "input"
-            ]
+            ],
+            "description": "Defines the alignment of the dropdown. Needs to be either \"left\" or \"right\""
           }
         ]
       },
@@ -104,14 +107,16 @@
             "type": "object",
             "direction": [
               "input"
-            ]
+            ],
+            "description": "Set the items which should be displayed. Accepts an array where items are of type Object. See README for details."
           },
           {
             "slotId": "title",
             "type": "string",
             "direction": [
               "input"
-            ]
+            ],
+            "description": "The given value (if any) will be displayed as the title of the side-nav."
           },
           {
             "slotId": "anchor",
@@ -119,7 +124,8 @@
             "direction": [
               "input"
             ],
-            "value": "left"
+            "value": "left",
+            "description": "Defines where to pin the naviagtion. Needs to either \"left\" or \"right\"."
           },
           {
             "slotId": "modal",
@@ -127,7 +133,8 @@
             "direction": [
               "input"
             ],
-            "value": false
+            "value": false,
+            "description": "If true the <side-nav> will mask page content with a semi transparent overlay."
           }
         ]
       }
