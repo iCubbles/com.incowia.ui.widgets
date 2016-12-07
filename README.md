@@ -3,5 +3,5 @@ This repository contains webpackage `com.incowia.ui.widgets` which comes with a 
 
 *Want to learn more about the Cubbles Platfrom?* See [Cubbles at github.io](http://cubbles.github.io/) or [Cubbles Confluence Wiki](https://cubbles.atlassian.net/wiki/)
 
-* [`<dropdown-menu>`](webpackages/com.incowia.ui.widgets/dropdown-menu/README.md)
-* [`<side-nav>`](webpackages/com.incowia.ui.widgets/side-nav/README.md)
+* [`<dropdown-menu>`](webpackages/com.incowia.ui.widgets/dropdown-menu)
+* [`<side-nav>`](webpackages/com.incowia.ui.widgets/side-nav)
